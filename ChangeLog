@@ -1,0 +1,32 @@
+CHANGELOG QuantRoll
+
+2011/06/09 Version 0.5.1  SJTU HPC Lab
+	
+	octave: use version 3.2.4 segmentation fault fixed
+	add packages:octave-financial
+
+2011/06/06 Version 0.5  SJTU HPC Lab
+	
+	fix environment variables
+
+2011/05/27 Version 0.4  SJTU HPC Lab
+	
+	remove packages:einspline, pmcpack
+	both i386/x86_64 available
+	
+2011/05/24 Version 0.3  SJTU HPC Lab
+	
+	add packages: rmetrics, quantmod, rquantlib, Finance::Quote, Finance::QuoteHist, numpy, scipy, matplotlib
+	rewrite userguide 
+	
+2011/05/16 Version 0.2  SJTU HPC Lab
+	
+	add packages: curl, einspline, hdf5, jquantlib, octave, qmcpack, swig
+	
+2011/05/13 Version 0.1.1  SJTU HPC Lab
+	
+	kickstart: bug fixed
+
+2011/05/09 Version 0.1  SJTU HPC Lab
+	
+	initial build: newmat, atlas, lapack, gsl, fftw, it++, r, finrecipe, quantlib, boost, libofx, opensp, quickfix, ta-lib, cliofetion

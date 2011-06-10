@@ -1,0 +1,5 @@
+Financial engineering is a cross-disciplinary field which relies on computational intelligence, mathematical finance, numerical methods and computer simulations to make trading, hedging and investment decisions, as well as facilitating the risk management of those decisions. Utilizing various methods, practitioners of financial engineering, frequently called "quants", aim to precisely determine the financial risk that certain financial instruments create.
+
+To address the requirements of these efforts, a wide spectrum of financial engineering libraries and tools are available. However, these libraries and tools are packaged in various ways and often require additional pre-dependencies.
+
+With the roll packaging technique from Rocks Clusters, the Quant Roll is a collection of the most popular cfinancial engineering libraries and tools that are widely used by both the academic and industrial fields. Pre-dependencies are included as well. The purpose of developing this roll is to simplify the packaging, installation and configuration of these libraries and tools. 
