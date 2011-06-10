@@ -1,0 +1,77 @@
+Some RPMs were packaged manually. Here is some scripts I used.
+
+OFetion
+	
+	mkdir build
+	cd build
+	cmake ..
+	make
+	*pack bin
+
+NewMat
+
+	gmake -f nm_gnu.mak
+	*copy files to lib bin include
+	rocks create package /root/Desktop/quant newmat prefix=/opt version=10.4
+
+jquantlib
+
+	*pack jar
+
+r-quantlib
+
+	install.packages("RQuantLib", lib="/opt/quant/library")
+	rocks create package /opt/quant/library r-rquantlib prefix=/opt/quant/lib/R version=0.3.7
+
+r-quantmod
+
+	install.packages("quantmod", lib="/opt/quant/library")
+	rocks create package /opt/quant/library r-quantmod prefix=/opt/quant/lib/R version=0.3.15
+
+r-Rmetrics
+
+	source("http://www.rmetrics.org/Rmetrics.R")
+	install.Rmetrics(lib="/opt/quant/library")
+	rocks create package /opt/quant/library r-rmetrics prefix=/opt/quant/lib/R version=2100
+
+perl-Finance::Quote
+
+	>perl -e shell -MCPAN
+	cpan>o conf makepl_arg PREFIX=/opt/quant/perl
+	cpan>o conf mbuildpl_arg "--prefix /opt/quant/perl"
+	cpan>o conf commit
+	install Finance::Quote
+	rocks create package /opt/quant/quant perl-finance-quote prefix=/opt version=1.17
+
+perl-Finance::QuoteHist
+
+	install Finance::QuoteHist
+	rocks create package /opt/quant/quant perl-finance-quotehist prefix=/opt version=1.16
+
+python-numpy
+
+	*/usr/lib/python2.4/site-packages/altinstall.pth->import os, site; site.addsitedir(os.path.expanduser('/opt/quant/lib/python2.4'))
+	*~/.pydistutils.cfg->[install] install_lib = /opt/quant/lib/python2.4 install_scripts = /opt/quant/bin
+	~/setuptools-0.6c11-py2.4.egg --prefix=/usr
+	export LAPACK=/opt/quant/lib
+	export ATLAS=/opt/quant/lib
+	easy_install numpy
+	rocks create package /opt/quant/quant python-numpy prefix=/opt version=1.6.0
+
+python-scipy
+
+	easy_install scipy
+	rocks create package /opt/quant/quant python-scipy prefix=/opt version=0.9.0
+
+python-matplotlib
+
+	easy_install matplotlib
+	rocks create package /opt/quant/quant python-matplotlib prefix=/opt version=1.0.1
+
+octave-financial
+
+	pkg install time-1.0.9.tar.gz
+	pkg install miscellaneous-1.0.11.tar.gz
+	pkg install financial-0.3.2.tar.gz
+	rocks create package /opt/quant/share/octave/ octave-financial prefix=/opt/quant/share/ version=0.3.2
+

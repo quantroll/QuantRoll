@@ -1,0 +1,63 @@
+<!ENTITY source_copyrights SYSTEM "copyrights.sgml">
+<!ENTITY source_index SYSTEM "index.sgml">
+<!ENTITY source_installing SYSTEM "installing.sgml">
+<!ENTITY source_preface SYSTEM "preface.sgml">
+<!ENTITY source_roll-apachev2-copyright SYSTEM "roll-apachev2-copyright.sgml">
+<!ENTITY source_roll-artistic-copyright SYSTEM "roll-artistic-copyright.sgml">
+<!ENTITY source_roll-commands SYSTEM "roll-commands.sgml">
+<!ENTITY source_roll-copyright-disclaimer SYSTEM "roll-copyright-disclaimer.sgml">
+<!ENTITY source_roll-ggplv1-copyright SYSTEM "roll-ggplv1-copyright.sgml">
+<!ENTITY source_roll-ggplv2-copyright SYSTEM "roll-ggplv2-copyright.sgml">
+<!ENTITY source_roll-glgplv21-copyright SYSTEM "roll-glgplv21-copyright.sgml">
+<!ENTITY source_roll-glgplv2-copyright SYSTEM "roll-glgplv2-copyright.sgml">
+<!ENTITY source_roll-installing-not-onthefly SYSTEM "roll-installing-not-onthefly.sgml">
+<!ENTITY source_roll-installing-onthefly SYSTEM "roll-installing-onthefly.sgml">
+<!ENTITY source_roll-installing-standard SYSTEM "roll-installing-standard.sgml">
+<!ENTITY source_roll-overview SYSTEM "roll-overview.sgml">
+<!ENTITY source_roll-python2-copyright SYSTEM "roll-python2-copyright.sgml">
+<!ENTITY source_roll-rocks-copyright SYSTEM "roll-rocks-copyright.sgml">
+<!ENTITY source_using SYSTEM "using.sgml">
+<!ENTITY roll_base "<entry namest=req>X</entry>">
+<!ENTITY roll_kernel "<entry namest=req>X</entry>">
+<!ENTITY roll_web-server "<entry namest=req>X</entry>">
+<!ENTITY roll_os1 "<entry namest=req>X</entry>">
+<!ENTITY roll_os2 "<entry namest=req>X</entry>">
+<!ENTITY roll_hpc "<entry namest=req>X</entry>">
+<!ENTITY roll_java "<entry namest=req>X</entry>">
+<!ENTITY document_rocks "<trademark class=registered>Rocks</trademark>">
+<!ENTITY document_rocks_clusters "<trademark class=trade>Rocks Clusters</trademark>">
+<!ENTITY document_avalanche "<trademark class=trade>Avalanche Installer</trademark>">
+<!ENTITY document_rollname "quant">
+<!ENTITY document_version "0.4">
+<!ENTITY document_version_name "Maverick">
+<!ENTITY document_pubdate "May 23 2011">
+<!ENTITY document_year "2011">
+<!ENTITY document_copyright "University of California">
+<!ENTITY summary_compatible "0.4">
+<!ENTITY summary_maintainer "SJTU HPC Lab">
+<!ENTITY summary_architecture "i386, x86_64">
+<!ENTITY rockscopyright SYSTEM "rocks-copyright.txt">
+<!ENTITY roll_alpha             "<entry namest=opt> X </entry>" >
+<!ENTITY roll_area51		"<entry namest=opt> X </entry>" >
+<!ENTITY roll_base		"<entry namest=opt> X </entry>" >
+<!ENTITY roll_bio		"<entry namest=opt> X </entry>" >
+<!ENTITY roll_condor		"<entry namest=opt> X </entry>" >
+<!ENTITY roll_ganglia		"<entry namest=opt> X </entry>" >
+<!ENTITY roll_grid		"<entry namest=opt> X </entry>" >
+<!ENTITY roll_hpc		"<entry namest=opt> X </entry>" >
+<!ENTITY roll_java		"<entry namest=opt> X </entry>" >
+<!ENTITY roll_kernel		"<entry namest=opt> X </entry>" >
+<!ENTITY roll_os1		"<entry namest=opt> X </entry>" >
+<!ENTITY roll_os2		"<entry namest=opt> X </entry>" >
+<!ENTITY roll_os3		"<entry namest=opt> X </entry>" >
+<!ENTITY roll_os4		"<entry namest=opt> X </entry>" >
+<!ENTITY roll_os5		"<entry namest=opt> X </entry>" >
+<!ENTITY roll_os6		"<entry namest=opt> X </entry>" >
+<!ENTITY roll_os7		"<entry namest=opt> X </entry>" >
+<!ENTITY roll_pbs		"<entry namest=opt> X </entry>" >
+<!ENTITY roll_service-pack	"<entry namest=opt> X </entry>" >
+<!ENTITY roll_sge		"<entry namest=opt> X </entry>" >
+<!ENTITY roll_viz		"<entry namest=opt> X </entry>" >
+<!ENTITY roll_web-server	"<entry namest=opt> X </entry>" >
+<!ENTITY roll_xen               "<entry namest=opt> X </entry>" >
+

@@ -1,0 +1,46 @@
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook V3.1//EN" [
+	<!ENTITY preface    SYSTEM "preface.sgml">
+	<!ENTITY installing SYSTEM "installing.sgml">
+	<!ENTITY using SYSTEM "using.sgml">
+	<!ENTITY copyrights SYSTEM "copyrights.sgml">
+	<!ENTITY % entities SYSTEM "entities.sgml">
+	%entities;
+]>
+
+<book>
+<bookinfo>
+
+	<title> Quant Roll: Users Guide </title>
+
+	<subtitle>
+		<inlinemediaobject>
+			<imageobject>
+				<imagedata fileref="">
+			</imageobject>
+		</inlinemediaobject>
+	</subtitle>
+
+	<edition>Version &document_version;</edition>
+
+	<pubdate>&document_pubdate;</pubdate>
+
+	<copyright id="copyright" xreflabel="copyright">
+		<year>&document_year;</year>
+		<holder>SJTU HPC Lab, and UC Regents</holder>
+	</copyright>
+
+	<releaseinfo>
+		<ulink url="roll-quant-usersguide.pdf">(PDF version)</ulink>
+	</releaseinfo>
+
+</bookinfo>
+
+&preface;
+&source_roll-overview;
+&installing;
+&using;
+&copyrights;
+&source_roll-rocks-copyright;
+
+</book>
+

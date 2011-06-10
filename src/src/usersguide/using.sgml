@@ -1,0 +1,247 @@
+<chapter id="using" xreflabel="Using the quant Roll">
+
+
+<title>Using the quant Roll</title>
+
+<section id="packages" xreflabel="List of libraries and tools included">
+<title>List of libraries and tools included</title>
+<para>
+The list of packages is as follows:
+</para>
+
+<itemizedlist>
+<listitem>
+<para>Financial Libraries:</para>
+<para>Quantlib http://quantlib.org/</para>
+<para>FinRecipe http://finance-old.bi.no/~bernt/gcc_prog/index.html</para>
+<para>LibOFX http://libofx.sourceforge.net/</para>
+<para>QuickFIX http://www.quickfixengine.org/</para>
+<para>TA-Lib http://ta-lib.org/</para>
+<para>jquantlib http://www.jquantlib.org/</para>
+</listitem>
+<listitem>
+<para>Numerical Libraries:</para>
+<para>R http://www.r-project.org/</para>
+<para>octave http://www.gnu.org/software/octave/</para>
+<para>ATLAS http://math-atlas.sourceforge.net/</para>
+<para>lapack http://www.netlib.org/lapack/</para>
+<para>NewMat http://www.robertnz.net/nm_intro.htm</para>
+<para>GSL http://www.gnu.org/software/gsl/</para>
+<para>FFTW http://www.fftw.org/</para>
+<para>IT++ http://itpp.sourceforge.net/</para>
+</listitem>
+<listitem>
+<para>General Dependences:</para>
+<para>Boost http://www.boost.org/</para>
+<para>OpenSP http://openjade.sourceforge.net/</para>
+<para>curl http://curl.haxx.se/</para>
+<para>hdf5 http://www.hdfgroup.org/HDF5/</para>
+</listitem>
+<listitem>
+<para>Tools:</para>
+<para>SWIG http://www.swig.org/</para>
+<para>cliofetion http://code.google.com/p/ofetion/</para>
+</listitem>
+<listitem>
+<para>R Addons from CRAN:</para>
+<para>Rmetrics http://www.rmetrics.org/</para>
+<para>quantmod http://www.quantmod.com/</para>
+<para>rquantlib http://dirk.eddelbuettel.com/code/rquantlib.html</para>
+</listitem>
+<listitem>
+<para>Octave Addons from Octave-Forge:</para>
+<para>financial http://octave.sourceforge.net/financial/index.html</para>
+</listitem>
+<listitem>
+<para>Perl Modules from CPAN:</para>
+<para>Finance::Quote http://finance-quote.sourceforge.net/</para>
+<para>Finance::QuoteHist http://www.mojotoad.com/sisk/projects/Finance-QuoteHist/</para>
+</listitem>
+<listitem>
+<para>Python Modules from pypi:</para>
+<para>numpy http://numpy.scipy.org/</para>
+<para>scipy http://www.scipy.org/</para>
+<para>matplotlib http://matplotlib.sourceforge.net/</para>
+</listitem>
+</itemizedlist>
+</section>
+
+<section>
+<title>QuantLib</title>
+<para>A free/open-source library for quantitative finance, written in C++ and exported to different languages such as Python, Ruby and Scheme.</para>
+<para>Documents for using QuantLib are available <ulink url='http://quantlib.org/docs.shtml'>here</ulink></para>
+</section>
+
+<section>
+<title>FinRecipe</title>
+<para>In finance, there are areas where formulas tend to get involved. Sometimes it may be easier to follow an exact computer routine. These C++ subroutines implement common algorithms in finance. Typical examples are option/derivatives pricing, term structure calculations, mean variance analysis.</para>
+<para>Documents for using FinRecipe are available <ulink url='http://finance-old.bi.no/~bernt/gcc_prog/recipes/recipes.pdf'>here</ulink></para>
+</section>
+
+<section>
+<title>LibOFX</title>
+<para>LibOFX is a parser and an API designed to allow applications to very easily support OFX command responses, usually provided by financial institutions for statement downloads.</para>
+<para>Documents for using LibOFX are available <ulink url='http://libofx.sourceforge.net/documentation.html'>here</ulink></para>
+</section>
+
+<section>
+<title>QuickFIX</title>
+<para>QuickFIX is a full-featured open source FIX engine, currently compatible with the FIX 4.0-5.0 spec. API's are available for C++, .NET, Python and Ruby.</para>
+<para>Documents for using QuickFIX are available <ulink url='http://www.quickfixengine.org/documentation.html'>here</ulink></para>
+</section>
+
+<section>
+<title>ta-lib</title>
+<para>Technical analysis open-source software library to process financial data. Provides RSI, MACD, Stochastic, moving average, etc.</para>
+<para>Documents for using QuickFIX are available <ulink url='http://ta-lib.org/d_api/d_api.html'>here</ulink></para>
+</section>
+
+<section>
+<title>jquantlib</title>
+<para>JQuantLib is a free, open-source, comprehensive framework for quantitative finance, written in 100% Java. It provides "quants" and Java application developers several mathematical and statistical tools needed for the valuation of shares, options, futures, swaps, and other financial instruments, also providing tools related to risk management and money management.</para>
+<para>JQuantLib is based on QuantLib, which is written in C++, aiming to be a complete rewrite of QuantLib, offering features Java developers expect to find. JQuantLib aims to be fast, correct, strongly typed, well-documented, and user-friendly. </para>
+<para>Documents for using jquantlib are available <ulink url='http://www.jquantlib.org/index.php/JQuantLib_Users_Guide'>here</ulink></para>
+</section>
+
+<section>
+<title>R</title>
+<para>R is a language and environment for statistical computing and graphics. It is a GNU project which is similar to the S language and environment which was developed at Bell Laboratories (formerly AT&amp;T, now Lucent Technologies) by John Chambers and colleagues. R can be considered as a different implementation of S. There are some important differences, but much code written for S runs unaltered under R.</para>
+<para>Documents for using R are available <ulink url='http://cran.r-project.org/manuals.html'>here</ulink></para>
+</section>
+
+<section>
+<title>Octave</title>
+<para>GNU Octave is a high-level interpreted language, primarily intended for numerical computations. It provides capabilities for the numerical solution of linear and nonlinear problems, and for performing other numerical experiments. It also provides extensive graphics capabilities for data visualization and manipulation. Octave is normally used through its interactive command line interface, but it can also be used to write non-interactive programs. The Octave language is quite similar to Matlab so that most programs are easily portable.</para>
+<para>Documents for using Octave are available <ulink url='http://www.gnu.org/software/octave/docs.html'>here</ulink></para>
+</section>
+
+<section>
+<title>ATLAS</title>
+<para>The ATLAS (Automatically Tuned Linear Algebra Software) project is an ongoing research effort focusing on applying empirical techniques in order to provide portable performance. At present, it provides C and Fortran77 interfaces to a portably efficient BLAS implementation, as well as a few routines from LAPACK.</para>
+<para>Documents for using ATLAS are available <ulink url='http://math-atlas.sourceforge.net/faq.html'>here</ulink></para>
+</section>
+
+<section>
+<title>lapack</title>
+<para>LAPACK is written in Fortran 90 and provides routines for solving systems of simultaneous linear equations, least-squares solutions of linear systems of equations, eigenvalue problems, and singular value problems. The associated matrix factorizations (LU, Cholesky, QR, SVD, Schur, generalized Schur) are also provided, as are related computations such as reordering of the Schur factorizations and estimating condition numbers. Dense and banded matrices are handled, but not general sparse matrices. In all areas, similar functionality is provided for real and complex matrices, in both single and double precision.</para>
+<para>The lapack package in this roll is included in the ATLAS package.</para>
+<para>Documents for using lapack are available <ulink url='http://www.netlib.org/lapack/#_documentation'>here</ulink></para>
+</section>
+
+<section>
+<title>NewMat</title>
+<para>NewMat is intended for scientists and engineers who need to manipulate a variety of types of matrices using standard matrix operations. Emphasis is on the kind of operations needed in statistical calculations such as least squares, linear equation solve and eigenvalues.</para>
+<para>Documents for using NewMat are available <ulink url='http://www.robertnz.net/ol_doc.htm'>here</ulink></para>
+</section>
+
+<section>
+<title>GSL</title>
+<para>The GNU Scientific Library (GSL) is a numerical library for C and C++ programmers. The library provides a wide range of mathematical routines such as random number generators, special functions and least-squares fitting. There are over 1000 functions in total with an extensive test suite.</para>
+<para>Documents for using GSL are available <ulink url='http://www.gnu.org/software/gsl/manual/html_node/'>here</ulink></para>
+</section>
+
+<section>
+<title>FFTW</title>
+<para>FFTW is a C subroutine library for computing the discrete Fourier transform (DFT) in one or more dimensions, of arbitrary input size, and of both real and complex data (as well as of even/odd data, i.e. the discrete cosine/sine transforms or DCT/DST).</para>
+<para>Documents for using FFTW are available <ulink url='http://www.fftw.org/#documentation'>here</ulink></para>
+</section>
+
+<section>
+<title>IT++</title>
+<para>IT++ is a C++ library of mathematical, signal processing and communication classes and functions. Its main use is in simulation of communication systems and for performing research in the area of communications. The kernel of the library consists of generic vector and matrix classes, and a set of accompanying routines. Such a kernel makes IT++ similar to MATLAB or GNU Octave.</para>
+<para>Documents for using IT++ are available <ulink url='http://itpp.sourceforge.net/current/'>here</ulink></para>
+</section>
+
+<section>
+<title>Boost</title>
+<para>Provides a repository for free peer-reviewed portable C++ source libraries. The emphasis is on libraries which work well with the C++ standard library.</para>
+<para>Documents for using Boost are available <ulink url='http://www.boost.org/doc/'>here</ulink></para>
+</section>
+
+<section>
+<title>OpenSP</title>
+<para>Jade is James Clark's implementation of DSSSL -- Document Style Semantics and Specification Language -- an ISO standard for formatting SGML (and XML) documents. OpenJade is a project undertaken by the DSSSL community to maintain and extend Jade, as well as the related SP suite of SGML/XML processing tools.</para>
+<para>Documents for using OpenSP are available <ulink url='http://openjade.sourceforge.net/'>here</ulink></para>
+</section>
+
+<section>
+<title>curl</title>
+<para>curl is a command line tool for transferring data with URL syntax, supporting DICT, FILE, FTP, FTPS, GOPHER, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, POP3, POP3S, RTMP, RTSP, SCP, SFTP, SMTP, SMTPS, TELNET and TFTP. curl supports SSL certificates, HTTP POST, HTTP PUT, FTP uploading, HTTP form based upload, proxies, cookies, user+password authentication (Basic, Digest, NTLM, Negotiate, kerberos...), file transfer resume, proxy tunneling and a busload of other useful tricks.</para>
+<para>Documents for using curl are available <ulink url='http://curl.haxx.se/docs/'>here</ulink></para>
+</section>
+
+<section>
+<title>HDF5</title>
+<para>HDF5 is a data model, library, and file format for storing and managing data. It supports an unlimited variety of datatypes, and is designed for flexible and efficient I/O and for high volume and complex data. HDF5 is portable and is extensible, allowing applications to evolve in their use of HDF5. The HDF5 Technology suite includes tools and applications for managing, manipulating, viewing, and analyzing data in the HDF5 format.</para>
+<para>Documents for using HDF5 are available <ulink url='http://www.hdfgroup.org/HDF5/doc/doc-info.html'>here</ulink></para>
+</section>
+
+<section>
+<title>SWIG</title>
+<para>SWIG is a software development tool that connects programs written in C and C++ with a variety of high-level programming languages. SWIG is used with different types of target languages including common scripting languages such as Perl, PHP, Python, Tcl and Ruby. SWIG is most commonly used to create high-level interpreted or compiled programming environments, user interfaces, and as a tool for testing and prototyping C/C++ software. SWIG is typically used to parse C/C++ interfaces and generate the 'glue code' required for the above target languages to call into the C/C++ code. SWIG can also export its parse tree in the form of XML and Lisp s-expressions.</para>
+<para>Documents for using SWIG are available <ulink url='http://www.swig.org/doc.html'>here</ulink></para>
+</section>
+
+<section>
+<title>cliofetion</title>
+<para>Fetion is an IM provided by China Mobile, with features like text chat, voice call, file sharing, etc. Openfetion is an opensource client of Fetion with limited features. It's small and fast, and is better in look. cliofetion is a simple command-line based Openfetion clients.</para>
+<para>Usage:</para> 
+<screen>$cliofetion -f mobileno -p password -t receive_mobileno -d message</screen>
+<para>Documents for using cliofetion are available <ulink url='http://code.google.com/p/ofetion/w/list'>here</ulink></para>
+</section>
+
+<section>
+<title>Rmetrics</title>
+<para>Rmetrics is an open source solution for teaching financial market analysis and valuation of financial instruments. With hundreds of functions build on modern methods, Rmetrics combines explorative data analysis and statistical modelling.</para>
+<para>Documents for using Rmetrics are available <ulink url='https://wiki.rmetrics.org/'>here</ulink></para>
+</section>
+
+<section>
+<title>quantmod</title>
+<para>The quantmod package for R is designed to assist the quantitative trader in the development, testing, and deployment of statistically based trading models. The quantmod is a rapid prototyping environment, where quant traders can quickly and cleanly explore and build trading models.</para>
+<para>Documents for using quantmod are available <ulink url='http://cran.r-project.org/web/packages/quantmod/quantmod.pdf'>here</ulink></para>
+</section>
+
+<section>
+<title>rquantlib</title>
+<para>RQuantLib connects GNU R with QuantLib.</para>
+<para>Documents for using rquantlib are available <ulink url='http://dirk.eddelbuettel.com/code/rquantlib.html'>here</ulink></para>
+</section>
+
+<section>
+<title>octave-financial</title>
+<para>Financial manipulation and plotting functions.</para>
+<para>Documents for using octave-financial are available <ulink url='http://octave.sourceforge.net/financial/overview.html'>here</ulink></para>
+</section>
+
+<section>
+<title>Finance::Quote</title>
+<para>Finance::Quote is a perl module which can be used to obtain information from a variety of sources, including markets in Australia, USA, Canada, Europe, and a number of managed funds.</para>
+<para>Documents for using Finance::Quote are available <ulink url='http://finance-quote.sourceforge.net/documentation.html'>here</ulink></para>
+</section>
+
+<section>
+<title>Finance::QuoteHist</title>
+<para>The Finance-QuoteHist bundle is several modules designed to fetch historical stock quotes from the web.</para>
+<para>Documents for using Finance::QuoteHist are available <ulink url='http://search.cpan.org/dist/Finance-QuoteHist/lib/Finance/QuoteHist.pm'>here</ulink></para>
+</section>
+
+<section>
+<title>numpy</title>
+<para>NumPy is the fundamental package needed for scientific computing with Python. It contains among other things: a powerful N-dimensional array object, sophisticated (broadcasting) functions, tools for integrating C/C++ and Fortran code, useful linear algebra, Fourier transform, and random number capabilities. Besides its obvious scientific uses, NumPy can also be used as an efficient multi-dimensional container of generic data. Arbitrary data-types can be defined. This allows NumPy to seamlessly and speedily integrate with a wide variety of databases.</para>
+<para>Documents for using numpy are available <ulink url='http://docs.scipy.org/doc/'>here</ulink></para>
+</section>
+
+<section>
+<title>scipy</title>
+<para>SciPy (pronounced "Sigh Pie") is open-source software for mathematics, science, and engineering. It is also the name of a very popular conference on scientific programming with Python. The SciPy library is built to work with NumPy arrays, and provides many user-friendly and efficient numerical routines such as routines for numerical integration and optimization.</para>
+<para>Documents for using scipy are available <ulink url='http://docs.scipy.org/doc/'>here</ulink></para>
+</section>
+
+<section>
+<title>matplotlib</title>
+<para>matplotlib is a python 2D plotting library which produces publication quality figures in a variety of hardcopy formats and interactive environments across platforms. matplotlib can be used in python scripts, the python and ipython shell (ala MATLAB or Mathematica), web application servers, and six graphical user interface toolkits.</para>
+<para>Documents for using matplotlib are available <ulink url='http://matplotlib.sourceforge.net/contents.html'>here</ulink></para>
+</section>
+
+</chapter>

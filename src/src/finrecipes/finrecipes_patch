@@ -1,0 +1,147 @@
+diff -uNr finrecipes_ori/all_cc_progs/findiff_imp_am_call_newmat.cc finrecipes/all_cc_progs/findiff_imp_am_call_newmat.cc
+--- finrecipes_ori/all_cc_progs/findiff_imp_am_call_newmat.cc	2008-07-15 00:23:07.000000000 +0800
++++ finrecipes/all_cc_progs/findiff_imp_am_call_newmat.cc	2011-04-08 17:01:06.000000000 +0800
+@@ -3,7 +3,7 @@
+ 
+ #include <cmath>
+ #include "newmat.h"  // definitions for newmat matrix library
+-using namespace NEWMAT;
++//using namespace NEWMAT;
+ 
+ #include <vector>   // standard STL vector template
+ #include <algorithm>
+diff -uNr finrecipes_ori/all_cc_progs/findiff_imp_am_put_newmat.cc finrecipes/all_cc_progs/findiff_imp_am_put_newmat.cc
+--- finrecipes_ori/all_cc_progs/findiff_imp_am_put_newmat.cc	2008-07-15 00:23:07.000000000 +0800
++++ finrecipes/all_cc_progs/findiff_imp_am_put_newmat.cc	2011-04-08 17:01:09.000000000 +0800
+@@ -1,6 +1,6 @@
+ #include <cmath>
+ #include "newmat.h"  // definitions for newmat matrix library
+-using namespace NEWMAT;
++//using namespace NEWMAT;
+ 
+ #include <vector>
+ #include <algorithm>
+diff -uNr finrecipes_ori/all_cc_progs/findiff_imp_eur_call_newmat.cc finrecipes/all_cc_progs/findiff_imp_eur_call_newmat.cc
+--- finrecipes_ori/all_cc_progs/findiff_imp_eur_call_newmat.cc	2008-07-15 00:23:07.000000000 +0800
++++ finrecipes/all_cc_progs/findiff_imp_eur_call_newmat.cc	2011-04-08 17:01:11.000000000 +0800
+@@ -3,7 +3,7 @@
+ 
+ #include <cmath>
+ #include "newmat.h"  // definitions for newmat matrix library
+-using namespace NEWMAT;
++//using namespace NEWMAT;
+ 
+ #include <algorithm>
+ #include <vector>
+diff -uNr finrecipes_ori/all_cc_progs/findiff_imp_eur_put_newmat.cc finrecipes/all_cc_progs/findiff_imp_eur_put_newmat.cc
+--- finrecipes_ori/all_cc_progs/findiff_imp_eur_put_newmat.cc	2008-07-15 00:23:07.000000000 +0800
++++ finrecipes/all_cc_progs/findiff_imp_eur_put_newmat.cc	2011-04-08 17:01:13.000000000 +0800
+@@ -1,6 +1,6 @@
+ #include <cmath>
+ #include "newmat.h"   // definitions for newmat matrix library
+-using namespace NEWMAT;
++//using namespace NEWMAT;
+ 
+ #include <vector>   // standard STL vector template
+ #include <algorithm>
+diff -uNr finrecipes_ori/all_cc_progs/fin_recipes_newmat.h finrecipes/all_cc_progs/fin_recipes_newmat.h
+--- finrecipes_ori/all_cc_progs/fin_recipes_newmat.h	2008-07-15 00:23:08.000000000 +0800
++++ finrecipes/all_cc_progs/fin_recipes_newmat.h	2011-04-08 16:50:51.000000000 +0800
+@@ -1,3 +1,4 @@
++//#define use_namespace
+ #include "newmat.h"
+ using namespace NEWMAT;
+ 
+diff -uNr finrecipes_ori/all_cc_progs/makefile finrecipes/all_cc_progs/makefile
+--- finrecipes_ori/all_cc_progs/makefile	2008-07-15 00:13:11.000000000 +0800
++++ finrecipes/all_cc_progs/makefile	2011-05-09 00:18:39.000000000 +0800
+@@ -92,20 +92,20 @@
+ ### IF THE MATRIX LIBRARY NEMWMAT IS INSTALLED, UNCOMMENT BELOW
+ ### may need to set path to where newmat is installed
+ ###CXXFLAGS += -I/home/bernt/include
+-#LIBOBJS += mv_calc_newmat.o mv_calc_port_unconstrained_newmat.o
+-#LIBOBJS += findiff_imp_am_call_newmat.o findiff_imp_am_put_newmat.o \
+-#           findiff_imp_eur_call_newmat.o findiff_imp_eur_put_newmat.o \
++LIBOBJS += mv_calc_newmat.o mv_calc_port_unconstrained_newmat.o
++LIBOBJS += findiff_imp_am_call_newmat.o findiff_imp_am_put_newmat.o \
++           findiff_imp_eur_call_newmat.o findiff_imp_eur_put_newmat.o \
+ 
+ ######################
+ ### IF THE MATRIX LIBRARY IT++ IS INSTALLED, UNCOMMENT BELOW
+-#LIBOBJS += mv_calc_itpp.o mv_calc_port_unconstrained_itpp.o 
+-#LIBOBJS += findiff_imp_am_put_itpp.o
++LIBOBJS += mv_calc_itpp.o mv_calc_port_unconstrained_itpp.o 
++LIBOBJS += findiff_imp_am_put_itpp.o
+ 
+ ######################
+ #### IF GSL IS INSTALLED, UNCOMMENT BELOW
+-#LIBOBJS += approx_am_put_geske_johnson.o
+-#LIBOBJS += heston_price.o
+-#LIBOBJS += N3.o
++LIBOBJS += approx_am_put_geske_johnson.o
++LIBOBJS += heston_price.o
++LIBOBJS += N3.o
+ 
+ 
+ fin_recipes.h:
+diff -uNr finrecipes_ori/all_cc_progs/mv_calc_newmat.cc finrecipes/all_cc_progs/mv_calc_newmat.cc
+--- finrecipes_ori/all_cc_progs/mv_calc_newmat.cc	2008-07-15 00:23:07.000000000 +0800
++++ finrecipes/all_cc_progs/mv_calc_newmat.cc	2011-04-08 16:58:46.000000000 +0800
+@@ -2,7 +2,7 @@
+ using namespace std;
+ 
+ #include "newmat.h"
+-using namespace NEWMAT;
++//using namespace NEWMAT;
+ 
+ double mv_calculate_mean(const Matrix& e, const Matrix& w){ 
+     Matrix tmp = e.t()*w;
+diff -uNr finrecipes_ori/all_cc_progs/mv_calc_port_unconstrained_newmat.cc finrecipes/all_cc_progs/mv_calc_port_unconstrained_newmat.cc
+--- finrecipes_ori/all_cc_progs/mv_calc_port_unconstrained_newmat.cc	2008-07-15 00:23:07.000000000 +0800
++++ finrecipes/all_cc_progs/mv_calc_port_unconstrained_newmat.cc	2011-04-08 17:01:03.000000000 +0800
+@@ -1,5 +1,5 @@
+ #include "newmat.h"
+-using namespace NEWMAT;
++//using namespace NEWMAT;
+ 
+ ReturnMatrix mv_calculate_portfolio_given_mean_unconstrained(const Matrix& e, 
+ 							     const Matrix& V, 
+diff -uNr finrecipes_ori/examples_cc/fin_recipes_newmat.h finrecipes/examples_cc/fin_recipes_newmat.h
+--- finrecipes_ori/examples_cc/fin_recipes_newmat.h	2008-07-15 00:23:08.000000000 +0800
++++ finrecipes/examples_cc/fin_recipes_newmat.h	2011-04-08 17:01:01.000000000 +0800
+@@ -1,5 +1,5 @@
+ #include "newmat.h"
+-using namespace NEWMAT;
++//using namespace NEWMAT;
+ 
+ // basic calculations
+ double mv_calculate_mean     (const Matrix& e, const Matrix& w);
+diff -uNr finrecipes_ori/examples_cc/makefile finrecipes/examples_cc/makefile
+--- finrecipes_ori/examples_cc/makefile	2008-03-30 18:51:31.000000000 +0800
++++ finrecipes/examples_cc/makefile	2011-05-09 01:00:46.000000000 +0800
+@@ -22,19 +22,19 @@
+ # may need to set path here, change to reflect your setup
+ #### CXXFLAGS += -I/home/bernt/include 
+ #### LIBS +=  -L/home/bernt/lib 
+-# CXXFLAGS += -D_HAVE_NEWMAT_ 
+-# LIBS +=  -lnewmat
++CXXFLAGS += -D_HAVE_NEWMAT_ 
++LIBS +=  -lnewmat
+ 
+ ################################################
+ ## IF IT++ IS AVAILABLE, UNCOMMENT
+-# CXXFLAGS += -D_HAVE_ITPP_ 
+-# LIBS +=  -litpp -lcblas -latlas
++CXXFLAGS += -D_HAVE_ITPP_ 
++LIBS +=  -litpp -lcblas -latlas
+ 
+ 
+ ################################################
+ ## IF GSL IS AVAILABLE, UNCOMMENT
+-# CXXFLAGS += -D_HAVE_GSL_
+-# LIBS += -lgsl 
++CXXFLAGS += -D_HAVE_GSL_
++LIBS += -lgsl -lgslcblas
+ 
+ run_all_examples.o: librecipes.a fin_recipes.h normdist.h  $(LIB) 
+ run_all_examples: librecipes.a fin_recipes.h run_all_examples.o 

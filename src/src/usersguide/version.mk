@@ -1,0 +1,12 @@
+ROLL			= quant
+VERSION			= 0.5.1
+NAME    		= roll-$(ROLL)-usersguide
+RELEASE			= 0
+
+SUMMARY_COMPATIBLE	= $(VERSION)
+SUMMARY_MAINTAINER	= SJTU HPC Lab
+SUMMARY_ARCHITECTURE	= i386, x86_64
+
+ROLL_REQUIRES		= base kernel web-server os1 os2 hpc java
+ROLL_CONFLICTS		=
+

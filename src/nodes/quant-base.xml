@@ -1,0 +1,91 @@
+<?xml version="1.0" standalone="no"?>
+
+<kickstart>
+
+
+	<description>
+	Your quant roll description here
+	</description>
+
+	<copyright>
+	Copyright (c) 2000 - 2010 The Regents of the University of California.
+	All rights reserved. Rocks(r) v5.4 www.rocksclusters.org
+	
+	</copyright>
+
+	<changelog>
+	$Log$
+	
+	
+	</changelog>
+
+	<package>roll-quant-usersguide</package>	
+	<package>atlas</package>
+	<package>boost</package>
+	<package>cliofetion</package>
+	<package>fftw</package>
+	<package>finrecipes</package>
+	<package>gsl</package>
+	<package>itpp</package>
+	<package>libofx</package>
+	<package>newmat</package>
+	<package>OpenSP</package>
+	<package>QuantLib</package>
+	<package>quickfix</package>
+	<package>ta-lib</package>
+	<package>R</package>
+	<package>curl</package>
+	<package>hdf5</package>
+	<package>jquantlib</package>
+	<package>octave</package>
+	<package>swig</package>
+	<package>r-rmetrics</package>
+	<package>r-quantmod</package>
+	<package>r-rquantlib</package>
+	<package>perl-finance-quote</package>
+	<package>perl-finance-quotehist</package>
+	<package>python-numpy</package>
+	<package>python-scipy</package>
+	<package>python-matplotlib</package>
+	<package>octave-financial</package>
+
+
+
+<post>
+
+<file name="/etc/profile.d/quant.sh" perm="0755">
+export PATH=$PATH:/opt/quant/bin
+export LIBRARY_PATH=$LIBRARY_PATH:/opt/quant/lib
+export CPATH=$CPATH:/opt/quant/include
+export R_LIBS=$R_LIBS:/opt/quant/lib64/R/library
+export PERL5LIB=$PERL5LIB:/opt/quant/lib/perl5/5.8.8:/opt/quant/lib/perl5/site_perl/5.8.8:/opt/quant/lib64/perl5/5.8.8/x86_64-linux-thread-multi:/opt/quant/lib64/perl5/site_perl/5.8.8/x86_64-linux-thread-multi
+</file>
+
+<file name="/etc/profile.d/quant.csh" perm="0755">
+set path = ( $path \
+	/opt/quant/bin )
+setenv LIBRARY_PATH $LIBRARY_PATH:/opt/quant/lib
+setenv CPATH $CPATH:/opt/quant/include
+setenv R_LIBS $R_LIBS:/opt/quant/lib64/R/library
+setenv PERL5LIB $PERL5LIB:/opt/quant/lib/perl5/5.8.8:/opt/quant/lib/perl5/site_perl/5.8.8:/opt/quant/lib64/perl5/5.8.8/x86_64-linux-thread-multi:/opt/quant/lib64/perl5/site_perl/5.8.8/x86_64-linux-thread-multi
+</file>
+
+<!--MANPATH-->
+<file name="/etc/man.config" mode="append">
+MANPATH /opt/quant/share/man
+</file>
+
+<!-- LD Library Path-->
+<file name="/etc/ld.so.conf.d/quant.conf" perm="0755">
+/opt/quant/lib
+/opt/quant/lib/octave-3.2.4
+</file>
+
+<!-- Python-->
+<file name="/usr/lib/python2.4/site-packages/altinstall.pth" mode="append" perm="0755">
+import os, site; site.addsitedir(os.path.expanduser('/opt/quant/lib/python2.4'))
+</file>
+
+</post>
+
+</kickstart>
